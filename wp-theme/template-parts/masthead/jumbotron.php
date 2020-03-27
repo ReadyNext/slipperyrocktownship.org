@@ -11,7 +11,7 @@
 
 <div class="jumbotron-wrapper" <?= $jumbotron_wrapper_style ?>>
 
-    <div class="jumbotron jumbotron-fluid" style="background:transparent;margin-bottom:0;">
+    <div class="jumbotron jumbotron-fluid" style="background:transparent;background-position:center;margin-bottom:0;">
         <div class="container text-center text-light" style="text-shadow:2px 2px #222222;">
             <h1 class="display-4">
                 <?= get_bloginfo('name') ?>
@@ -23,7 +23,7 @@
     </div>
 
     <?php if (!empty($caption)) { ?>
-        <div class="pb-1 text-right" style="opacity:0.6;">
+        <div class="pb-1 text-right" style="opacity:0.75;">
             <span class="badge badge-pill badge-dark">
                 <?= $caption ?>
             </span>
