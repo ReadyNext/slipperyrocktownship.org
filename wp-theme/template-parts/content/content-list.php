@@ -13,11 +13,9 @@
 
             $tags = get_the_tags();
 
-            function tag_slug($tag) {
+            $tags = array_map(function ($tag) {
                 return $tag->slug;
-            }
-
-            $tags = array_map(tag_slug, $tags);
+            }, $tags);
 
             if (is_array($tags)) {
                 if (in_array('sticky-primary', $tags)) {
