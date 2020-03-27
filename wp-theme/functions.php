@@ -7,6 +7,9 @@ function readynext_after_setup_theme() {
         'header-text' => true
     ));
 
+    add_theme_support('editor-styles');
+    add_editor_style('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+
     add_theme_support('title-tag');
 }
 
