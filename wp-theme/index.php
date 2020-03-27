@@ -26,7 +26,7 @@
         </div>
         <div class="flex-grow-1" data-area="content">
             <div class="container-fluid py-2">
-                <?php if (is_active_sidebar('alerts')) { ?>
+                <?php if (is_active_sidebar('alerts') && is_front_page()) { ?>
                     <div class="row">
                         <div class="col text-center">
                             <?php dynamic_sidebar('alerts'); ?>
