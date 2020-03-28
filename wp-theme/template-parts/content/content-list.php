@@ -52,11 +52,14 @@
     <div class="card mb-2 <?= $card_bg_class ?> <?= $card_text_class ?>">
         <div class="card-body">
             <h5 class="card-title">
-                <a href="<?php echo esc_url(get_permalink()); ?>" style="color:inherit;">
-                    <?php the_title(); ?>
+                <a class="stretched-link" href="<?php echo esc_url(get_permalink()); ?>" style="color:inherit;">
+                    <?= get_the_title(); ?>
                 </a>
             </h5>
-            <h6 class="card-subtitle mb-2 <?= $card_subtitle_text_class ?>"><?php the_author(); ?></h6>
+            <h6 class="card-subtitle mb-0 <?= $card_subtitle_text_class ?>">
+                <?= get_the_author(); ?>
+            </h6>
+            <p class="mb-2 text-muted"><?= get_the_date(); ?> at <?= get_the_time(); ?></p>
             <p class="card-text"><?php
                 if (has_excerpt()) {
                     the_excerpt();
