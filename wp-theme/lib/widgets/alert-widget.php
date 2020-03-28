@@ -1,6 +1,6 @@
 <?php
 
-class Alert_WP_Widget extends WP_Widget {
+class WP_Widget_Alert extends WP_Widget {
 
     function __construct() {
         parent::__construct('readynext_alert', __('Alert'));

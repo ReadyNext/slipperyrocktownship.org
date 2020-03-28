@@ -37,7 +37,9 @@
                     </div>
                 <?php } ?>
                 <div class="row mt-1">
-                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <?php dynamic_sidebar('left'); ?>
+                    </div>
                     <div class="col">
                         <?php
                         if (is_single() || is_page()) {
