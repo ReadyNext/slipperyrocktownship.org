@@ -6,6 +6,9 @@
     <meta name="author" content="Josh Johnson dba ReadyNext">
     <meta charset="<?php bloginfo('charset'); ?>">
 
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_theme_root_uri() . '/slipperyrocktownship.org/assets/icons/favicon-32x32.png' ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_theme_root_uri() . '/slipperyrocktownship.org/assets/icons/favicon-16x16.png' ?>">
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -26,14 +29,14 @@
         </div>
         <div class="flex-grow-1" data-area="content">
             <div class="container-fluid py-2">
-                <?php if (is_active_sidebar('alerts') && is_front_page()) { ?>
+                <?php if (is_active_sidebar('alerts')) { ?>
                     <div class="row">
                         <div class="col text-center">
                             <?php dynamic_sidebar('alerts'); ?>
                         </div>
                     </div>
                 <?php } ?>
-                <div class="row">
+                <div class="row mt-1">
                     <div class="col-md-3"></div>
                     <div class="col">
                         <?php

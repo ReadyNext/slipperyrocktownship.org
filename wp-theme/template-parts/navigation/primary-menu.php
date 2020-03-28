@@ -31,7 +31,7 @@ class BootstrapMenuWalker extends Walker_Nav_Menu {
     
         // it would be better to enter the class in Appearance -> Menus -> Screen Options -> CSS classes
         // $output .= $indent . '<li' . $id . $class_names .'>';
-        $output .= $indent . '<li ' . $id . 'class="nav-item ' . $class_names . '">';
+        $output .= $indent . '<li ' . $id . 'class="nav-item px-1 ' . $class_names . '">';
     
         $atts = array();
         $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
