@@ -37,10 +37,10 @@
                     </div>
                 <?php } ?>
                 <div class="row mt-1">
-                    <div class="col-md-3">
+                    <div class="col-md-3 order-2 order-md-1">
                         <?php dynamic_sidebar('left'); ?>
                     </div>
-                    <div class="col">
+                    <div class="col order-1 order-md-2">
                         <?php
                         if (is_single() || is_page()) {
                             get_template_part('template-parts/content/content-single');
@@ -51,7 +51,7 @@
                         }
                         ?>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-3 order-3">
                         <?php dynamic_sidebar('right'); ?>
                     </div>
                 </div>
